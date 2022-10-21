@@ -15,9 +15,10 @@ a:hover {
 .container {
     width: 70%;
     margin: 0 auto;
+    padding-bottom: 5%;
 }
 
-header {
+.header {
     margin-top: 25%;
     display: flex;
     margin-bottom: 3%;
@@ -136,20 +137,26 @@ header {
     font-size: 1vw;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 2vh;
-    font-size: 1vw;
+html {
+    position: relative;
+    min-height: 100%;
 }
 
-footer a {
+.footer {
+    position: absolute;
+    bottom: 1.250em;
+    font-size: 1vw;
+
+}
+
+.footer a {
     color: gray;
     text-decoration: none;
     margin-right: 0.3vw;
 }
 
-@media screen and (max-width: 1200px){
+
+@media screen and (max-width: 1900px){
     .container {
         width: 1140px;
     }
@@ -159,7 +166,7 @@ footer a {
     .container {
         width: 960px;
     }
-    header {
+    .header {
         margin-top: 15%;
     }
     .logo p {
@@ -183,7 +190,7 @@ footer a {
     .list > li > a {
         font-size: 16px;
     }
-    footer a {
+    .footer a {
         font-size: 14px;
     }
 }
@@ -192,7 +199,7 @@ footer a {
     .container {
         width: 720px;
     }
-    header {
+    .header {
         margin-top: 10%;
     }
     .error {
@@ -217,7 +224,7 @@ footer a {
     .container {
         width: 600px;
     }
-    header {
+    .header {
         margin-top: 5%;
     }
     .search button {
@@ -246,7 +253,7 @@ footer a {
     .list > li > img {
         height: 16px;
     }
-    footer a {
+    .footer a {
         font-size: 14px;
     }
 
@@ -256,7 +263,7 @@ footer a {
     .container {
         width: 95%;
     }
-    header {
+    .header {
         margin-top: 2%;
         display: flex;
         align-items: center;
